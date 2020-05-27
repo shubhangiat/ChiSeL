@@ -19,7 +19,7 @@ During compilation flags can be set in makefile.
 To measure heap sizes.
 
 ### * -DPERTURB_CRIT
-To perturb the original graph at runtime. The graph edges that match with the query graph edges are set to 1 before subgraph search and are reset to default value when the computation is done.
+To perturb the original graph at runtime. The graph edges that match with the query graph edges are set to 1 before subgraph search and are reset to default value when the computation is done.  
 __Note:__ All query graph vertex-ids must match the input graph vertex-ids.
 
 # Argument and Graph files format:

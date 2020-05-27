@@ -4,7 +4,7 @@ How to run the binary file?
 Compile all the header files and dependent cpp files through make command and then run the binary file with appropriate arguments.
 
 make
-./subgraph <input graph vertex-label file> <input graph edge file> <list of query graph files>
+./subgraph \<input graph vertex-label file\> \<input graph edge file\> \<list of query graph files\>
 
 
 Parameters:

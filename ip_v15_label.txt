@@ -1,0 +1,15 @@
+v1 F
+v2 F
+v3 A
+v4 C
+v5 E
+v6 B
+v7 C
+v8 A
+v9 B
+v10 F
+v11 E
+v12 C
+v13 B
+v14 D
+v15 C

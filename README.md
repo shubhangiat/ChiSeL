@@ -7,14 +7,14 @@ make
 ./subgraph <input graph vertex-label file> <input graph edge file> <list of query graph files>
 ```
 
-# Parameters:
+# Parameters
 
 The _k_ for top-_k_ matching subgraphs can be set in the _const.h_ header file.
 
 
 # Argument and Graph files format:
 
-## Vertex file: 
+## Vertex file 
 File format: vid label
 
 e.g.
@@ -24,7 +24,7 @@ v2 l2
 v3 l1  
 ```
 
-## Edge file:
+## Edge file
 
 File format: vid1 vid2 edge_probability
 
@@ -39,7 +39,7 @@ This format is followed for both input target graph.
 For the query graph the edge file has only two values, the vertex ids of an edge.
 
 
-## Format of third argument (list of query graph files):
+## Format of third argument (list of query graph files)
 
 ```
 <query graph vertex-label file 1> <query graph edge file 1>

@@ -1,6 +1,6 @@
-#ChiSeL
+# ChiSeL
 
-# Introduction
+## Introduction
 *ChiSeL* is a novel algorithmic framework that uses the idea of
 statistical significance for approximate subgraph matching on
 uncertain graphs. For each candidate matching vertex in the target

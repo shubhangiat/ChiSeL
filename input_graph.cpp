@@ -30,7 +30,7 @@ Input :: Input(const string iNodeFile, const string iEdgeFile)
 	{
 		#ifdef DEBUG
 				cout<<id<<" "<<label<<endl;
-		#endif
+		#endif	// DEBUG
 		Vertex *ver = new Vertex(id, label);
 		graph[id] = ver;
 
@@ -72,7 +72,7 @@ Input :: Input(const string iNodeFile, const string iEdgeFile)
 	{
 		#ifdef DEBUG
 				cout<<id<<" "<<edge<<" "<<pr<<endl;
-		#endif
+		#endif	// DEBUG
 		if(prevId.compare(id) == 0)
 		{
 			// If the previous edge that was read had first vertex same as this edge

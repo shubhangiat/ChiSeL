@@ -1,4 +1,20 @@
-# How to run the binary file?
+#ChiSeL
+
+# Introduction
+*ChiSeL* is a novel algorithmic framework that uses the idea of
+statistical significance for approximate subgraph matching on
+uncertain graphs. For each candidate matching vertex in the target
+graph that matches a query vertex, it computes its statistical
+significance using the chi-squared statistic. The search algorithm
+then proceeds in a greedy manner by exploring the vertex neighbors
+having the largest chi-square score. The algorithm works well on
+large real-life graphs with millions of vertices and billions of
+edges and can compute answer seconds after reading the input graph.
+
+Please cite our paper, if you use our source code.
+* "ChiSeL: Graph Similarity Search using Chi-Squared Statistics in Large Probabilistic Graphs. VLDB'20"
+
+## How to run the binary file?
 
 Compile all the header files and dependent cpp files through make command and then run the binary file with appropriate arguments.
 
@@ -7,11 +23,11 @@ make
 ./subgraph <input graph vertex-label file> <input graph edge file> <list of query graph files>
 ```
 
-# Parameters
+## Parameters
 
 The _k_ for top-_k_ matching subgraphs can be set in the _const.h_ header file.
 
-## Flags
+### Flags
 
 During compilation flags can be set in makefile.
 
@@ -22,9 +38,9 @@ To measure heap sizes.
 To perturb the original graph at runtime. The graph edges that match with the query graph edges are set to 1 before subgraph search and are reset to old value when the computation is done.  
 __Note:__ All query graph vertex-ids must match the input graph vertex-ids.
 
-# Argument and Graph files format:
+## Argument and Graph files format:
 
-## Vertex file 
+### Vertex file 
 File format: vid label
 
 e.g.
@@ -34,7 +50,7 @@ v2 l2
 v3 l1  
 ```
 
-## Edge file
+### Edge file
 
 File format: vid1 vid2 edge_probability
 
@@ -49,7 +65,7 @@ This format is followed for both input target graph.
 For the query graph the edge file has only two values, the vertex ids of an edge.
 
 
-## Format of third argument (list of query graph files)
+### Format of third argument (list of query graph files)
 
 ```
 <query graph vertex-label file 1> <query graph edge file 1>

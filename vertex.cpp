@@ -192,10 +192,6 @@ void Vertex :: print(void) const
 		cout<<"\tChi-square string length: "<<chiLength;
 
 		cout<<"\tChi-Sq Value: "<<chiValue<<endl;
-
-//		cout<<"\tChi labels: ";
-//		for(unsigned i=0; i<chiLength; i++)
-//			cout<<chiLabels[i]<<" ";
 	}
 
 	cout<<endl;

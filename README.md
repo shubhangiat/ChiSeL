@@ -1,4 +1,4 @@
-# ChiSeL
+# *ChiSeL*
 
 ## Introduction
 *ChiSeL* is a novel algorithmic framework that uses the idea of

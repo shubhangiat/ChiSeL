@@ -23,9 +23,10 @@ make
 ./subgraph <input graph vertex-label file> <input graph edge file> <list of query graph files>
 ```
 
-For instance,
+For instance,to compile and run the sample data files
 
 ```
+make
 ./subgraph ip_v15_label.txt ip_v15_edge.txt qry_graphs.txt
 ```
 

@@ -23,6 +23,12 @@ make
 ./subgraph <input graph vertex-label file> <input graph edge file> <list of query graph files>
 ```
 
+For instance,
+
+```
+./subgraph ip_v15_label.txt ip_v15_edge.txt qry_graphs.txt
+```
+
 ## Parameters
 
 The _k_ for top-_k_ matching subgraphs can be set in the _const.h_ header file.

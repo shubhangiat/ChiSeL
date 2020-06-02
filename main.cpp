@@ -45,11 +45,12 @@ int main(int argc, char **argv)
 	string i_edge_file = argv[2];
 
 	cout<<"Reading Input Graph files and Indexing Input Structure...\n";
+	cout<<"Input files:\t"<<i_label_file<<"\t"<<i_edge_file<<endl;
 	fflush(stdout);
 	begin = clock();
 	Input inp(i_label_file, i_edge_file);
 	end = clock();
-	cout<<"Read in "<<((end-begin)*1.0)/CLOCKS_PER_SEC<<" sec."<<endl;
+	cout<<"Read in "<<((end-begin)*1.0)/CLOCKS_PER_SEC<<" sec.\n"<<endl;
 
 #ifdef DEBUG
 	// Check the input graph obtained
@@ -137,12 +138,12 @@ int main(int argc, char **argv)
 				// unperturb the input graph
 				inp.unperturb_CRITICAL(orig_epr);
 		#endif	// PERTURB_CRIT
-				cout<<"Input graph:"<<endl;
 
-#ifdef DEBUG
-	// Check the input graph obtained
-	inp.printGraph();
-#endif // DEBUG
+		#ifdef DEBUG
+			// Check the input graph obtained
+			cout<<"Input graph:"<<endl;
+			inp.printGraph();
+		#endif // DEBUG
 
 		cout<<endl;
 		qfile>>f1>>f2;	//	Reading next query vertex and graph edge file

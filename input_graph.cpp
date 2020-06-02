@@ -502,10 +502,8 @@ vector<vector<Vertex*> > Input :: getSubGraphs(const Query& qry)
 				}
 
 				// Check if the label of view is present in the chiLabels of the cand
-				bool match = false;
 				if(find(chiLab.begin(), chiLab.end(), view->getLabel())!=chiLab.end())
 				{
-					match = true;
 					view->setParent(cand);
 					secondary_heap.push(view);		// Insertion in heap based on chisq value and the edge probability of edge connecting "parent"
 					

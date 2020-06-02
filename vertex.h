@@ -73,7 +73,7 @@ class Vertex : public Node  // publicly inherits the node structure
 	Vertex(const string, const string);  // Creates a vertex with the characteristics
 	~Vertex();  // Deallocates space
 
-	const vector<string>& getNeighbourLabels(void) const;  // Returns the list of neighbour labels
+	const vector<string> getNeighbourLabels(void) const;  // Returns the list of neighbour labels
 
 	long double getChiValue(void) const;  // Returns the chi-square value associated with the vertex
 

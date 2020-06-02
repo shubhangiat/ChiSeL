@@ -102,13 +102,15 @@ const double* Vertex :: getSymbolOcc(void) const
 
 
 // Returns the list of neighbour labels
-const vector<string>& Vertex :: getNeighbourLabels(void) const
+const vector<string> Vertex :: getNeighbourLabels(void) const
 {
     vector<string> nLabels;
     vector<Edge*>::const_iterator it = neighbourLabels.begin();
 
     for(; it!=neighbourLabels.end(); it++)
+	{
         nLabels.push_back((*it)->getLabel());
+	}
 
 	return nLabels;
 }
